@@ -13,10 +13,10 @@ class Button {
 }
 
 // Создаем экземпляр класса button и передаем аргументы в конструктор
-let sendMessageButton = new Button("50", "20", "button", "purple");
+let sendMessageButton = new Button(50, 20, "button", "purple");
 console.log(sendMessageButton);
 
-sendMessageButton.onClick; 
+sendMessageButton.onClick(); 
 
 // функция для проверки свойств экземпляра 
 function testButton(buttonProperty, sampleValue) {
