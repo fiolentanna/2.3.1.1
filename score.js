@@ -1,30 +1,10 @@
-const players = [
-  {
-    id: 1,
-    name: "Ivan",
-    scorePoints: 4500,
-  },
-  {
-    id: 2,
-    name: "Petr",
-    scorePoints: 3600,
-  },
-  {
-    id: 3,
-    name: "Vadim",
-    scorePoints: 3433,
-  },
-  {
-    id: 4,
-    name: "Olga",
-    scorePoints: 2356,
-  },
-];
+let testdata = require('./testdata.json')
+console.log(testdata)
 
 // создаю пустой массив для хранения очков
 let score = [];
-for (let player in players) {
-  score.push(players[player].scorePoints);
+for (let player in testdata) {
+  score.push(testdata[player].scorePoints);
 }
 console.log(score); //массив заполняется данными с очками из массива с объектами
 
